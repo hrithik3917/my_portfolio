@@ -1,0 +1,189 @@
+/* App-specific styles */
+
+/* Ensure smooth scrolling */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Section spacing */
+section {
+  position: relative;
+}
+
+/* Performance optimizations */
+.will-change-transform {
+  will-change: transform;
+}
+
+.will-change-opacity {
+  will-change: opacity;
+}
+
+/* Canvas styling */
+canvas {
+  display: block;
+}
+
+/* Glass card hover states */
+.card-glass {
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* Button interactions */
+button, a {
+  transition: all 0.2s ease;
+}
+
+button:active, a:active {
+  transform: scale(0.98);
+}
+
+/* Input focus ring animation */
+.input-glow {
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Skill tag interactions */
+.skill-tag {
+  cursor: default;
+  user-select: none;
+}
+
+/* Gradient text animation */
+.gradient-text-animated {
+  background-size: 200% auto;
+  animation: gradient-shift 4s ease infinite;
+}
+
+@keyframes gradient-shift {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+/* Floating animation variants */
+.animate-float-delayed {
+  animation: float 6s ease-in-out infinite;
+  animation-delay: 2s;
+}
+
+.animate-float-slow {
+  animation: float 8s ease-in-out infinite;
+}
+
+/* Glow pulse animation */
+.animate-glow-pulse {
+  animation: glow-pulse 3s ease-in-out infinite;
+}
+
+@keyframes glow-pulse {
+  0%, 100% {
+    box-shadow: 0 0 20px rgba(0, 217, 255, 0.3);
+  }
+  50% {
+    box-shadow: 0 0 40px rgba(0, 217, 255, 0.5);
+  }
+}
+
+/* Timeline line animation */
+.timeline-line {
+  transform-origin: top;
+}
+
+/* Card 3D tilt effect base */
+.card-3d {
+  transform-style: preserve-3d;
+  perspective: 1000px;
+}
+
+/* Scroll indicator bounce */
+@keyframes bounce-subtle {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(8px);
+  }
+}
+
+.animate-bounce-subtle {
+  animation: bounce-subtle 2s ease-in-out infinite;
+}
+
+/* Loading shimmer effect */
+@keyframes shimmer {
+  0% {
+    background-position: -200% 0;
+  }
+  100% {
+    background-position: 200% 0;
+  }
+}
+
+.shimmer {
+  background: linear-gradient(
+    90deg,
+    rgba(255, 255, 255, 0) 0%,
+    rgba(255, 255, 255, 0.05) 50%,
+    rgba(255, 255, 255, 0) 100%
+  );
+  background-size: 200% 100%;
+  animation: shimmer 2s infinite;
+}
+
+/* Responsive typography */
+@media (max-width: 640px) {
+  .text-hero {
+    font-size: clamp(36px, 12vw, 48px) !important;
+  }
+  
+  .text-section {
+    font-size: clamp(28px, 8vw, 36px) !important;
+  }
+}
+
+/* Touch device optimizations */
+@media (pointer: coarse) {
+  .card-glass:hover {
+    transform: none;
+  }
+  
+  .skill-tag:hover {
+    transform: none;
+  }
+}
+
+/* Reduced motion preferences */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+  
+  .gradient-text-animated {
+    animation: none;
+  }
+}
+
+/* Print styles */
+@media print {
+  .particle-background,
+  nav,
+  .scroll-indicator {
+    display: none !important;
+  }
+  
+  body {
+    background: white !important;
+    color: black !important;
+  }
+}

@@ -67,7 +67,7 @@ const Contact = () => {
     { icon: Mail, label: 'Email', value: 'hritik.dalvi1803@gmail.com', href: 'mailto:hritik.dalvi1803@gmail.com' },
     { icon: MapPin, label: 'Location', value: 'Lexington, KY', href: null },
     { icon: Linkedin, label: 'LinkedIn', value: 'linkedin.com/in/hritikdalvi', href: 'https://linkedin.com/in/hritikdalvi' },
-    { icon: Github, label: 'GitHub', value: 'github.com/hritikdalvi', href: 'https://github.com/hritikdalvi' },
+    { icon: Github, label: 'GitHub', value: 'github.com/hritikdalvi', href: 'https://github.com/hrithik3917' },
   ];
 
   return (

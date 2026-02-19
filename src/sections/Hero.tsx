@@ -12,10 +12,10 @@ const Hero = () => {
   const [isLoaded, setIsLoaded] = useState(false);
 
   useEffect(() => {
-    setIsLoaded(true);
     
     const ctx = gsap.context(() => {
-      const tl = gsap.timeline({ defaults: { ease: 'power3.out' } });
+      const tl = gsap.timeline({
+        defaults: { ease: 'power3.out' }, onStart: () => setIsLoaded(true)});
 
       tl.fromTo(cardRef.current,
         { opacity: 0, scale: 0.9, y: 30 },

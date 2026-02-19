@@ -88,7 +88,7 @@ const Hero = () => {
         {/* Content */}
         <div className="text-center">
           <p className="font-mono text-sm text-cyan mb-4 tracking-widest uppercase">
-            Data Scientist & ML Engineer
+            Software Developer & ML Engineer
           </p>
           
           <h1

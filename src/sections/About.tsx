@@ -181,13 +181,13 @@ const About = () => {
               </div>
 
               {/* Floating badges */}
-              <div className="absolute top-0 right-0 p-3 rounded-xl glass animate-float">
+              <div className="absolute top-[8%] right-[8%] p-3 rounded-xl glass animate-float">
                 <span className="text-cyan font-mono text-sm">Python</span>
               </div>
-              <div className="absolute bottom-10 left-0 p-3 rounded-xl glass animate-float" style={{ animationDelay: '1s' }}>
+              <div className="absolute bottom-[14%] left-[14%] p-3 rounded-xl glass animate-float" style={{ animationDelay: '1s' }}>
                 <span className="text-magenta font-mono text-sm">PyTorch</span>
               </div>
-              <div className="absolute top-1/3 -right-4 p-3 rounded-xl glass animate-float" style={{ animationDelay: '2s' }}>
+              <div className="absolute top-1/2 right-[12%] -translate-y-1/2 p-3 rounded-xl glass animate-float" style={{ animationDelay: '2s' }}>
                 <span className="text-matrix font-mono text-sm">RAG</span>
               </div>
             </div>

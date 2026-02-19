@@ -25,7 +25,10 @@ const Skills = () => {
     { name: 'LLMs', category: 'ml' },
     { name: 'spaCy', category: 'ml' },
     { name: 'DeepEval', category: 'ml' },
+    { name: 'NumPy', category: 'ml' },
+    { name: 'Pandas', category: 'ml' },
     // Engineering - Magenta
+    { name: 'Java', category: 'engineering' },
     { name: 'React', category: 'engineering' },
     { name: 'Node.js', category: 'engineering' },
     { name: 'REST APIs', category: 'engineering' },
